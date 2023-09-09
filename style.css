@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Sans-serif;
+}
+
+section{
+    width: 540px;
+    margin: 20px auto;
+}
+
+#continuous_writing{
+    color:white;
+    height: 120px;
+    background:linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1)), url("screen.png");
+    background-size:cover;
+    text-align:center;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 1.5rem;
+}
+
+#continuous_writing .typing{
+    margin:0 10px;
+}
+
+#continuous_writing .typing::after{
+    content:"";
+    position:absolute;
+    width:1px;
+    height:30px;
+    border-right:2px solid white;
+    animation:blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+
+}
+
+
+/* email validation */
+#email_validation h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#email_validation .inputbox {
+    position: relative;
+}
+
+#email_validation .inputbox input {
+    width: 100%;
+    background: #292929;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+}
+
+#email_validation .inputbox span {
+    display: block;
+    color: #000;
+    font-weight: 300;
+    font-style: italic;
+    padding: 5px;
+}
